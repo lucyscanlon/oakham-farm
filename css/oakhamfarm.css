@@ -1,0 +1,481 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* header */
+
+
+
+.header-whole-container {
+  width: 100%;
+  height: 105px;
+  background-color: #4A372A;
+  -webkit-box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
+box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
+position: relative;
+z-index: 1000;
+}
+
+.title-padding {
+  padding-left: 100px;
+}
+
+.header-logo {
+  width: 90px;
+  float: left;
+  height: 105px;
+}
+
+.header-title-container {
+  width: calc(40%-90px);
+  float: left;
+  height: 105px;
+  color: white;
+}
+
+.header-whole-container img {
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.header-title-container h1 {
+  padding-top: 18px;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  font-family: "Nunito";
+
+
+}
+
+.header-title-container h1:hover {
+  color: #C6C6C6;
+  cursor: pointer;
+}
+
+.header-title-container a {
+  color: white;
+}
+
+.header-title-container a:hover {
+  color: #C6C6C6;
+}
+
+.header-title-container h4 {
+  padding-top: 2px;
+  padding-left: 20px;
+  font-family: "Nunito";
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header-menu-container {
+  width: 60%;
+  float: right;
+  height: 105px;
+}
+
+.header-menu-container li {
+  display: inline;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-transform: uppercase;
+  font-family: "Nunito";
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.header-menu-container li:hover {
+  color: #C6C6C6;
+  cursor: pointer;
+}
+
+.header-menu-container ul {
+  text-align: right;
+  padding-top: 42px;
+  padding-right: 30px;
+}
+
+
+.header-menu-container a {
+  color: white;
+}
+
+.header-menu-container a:hover {
+  color: #C6C6C6;
+}
+
+.header-menu-float {
+  width: calc(100% - 100px);
+  height: 105px;
+  float: left;
+
+}
+
+.header-facebook-float {
+  width: 100px;
+  float: right;
+  height: 105px;
+}
+
+.header-facebook-float i {
+  padding-top: 42.5px;
+}
+
+
+
+
+/* three images */
+
+
+.header-three-images-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-image-container {
+  width: 33.3%;
+  height: 500px;
+}
+
+
+
+/* fishing section */
+
+.timber-whole-container {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.timber-fishing-boxes {
+  width: 100%;
+  overflow: auto;
+  -webkit-box-shadow: 2px -14px 24px -21px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px -14px 24px -21px rgba(0,0,0,0.75);
+box-shadow: 2px -14px 24px -21px rgba(0,0,0,0.75);
+position: relative;
+z-index: 100;
+  /*background: url('ripples.png');*/
+
+}
+
+.fishing-title-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: #4A372A;
+  font-family: "Nunito";
+  padding-top: 20px;
+  font-size: 35px;
+  font-weight: 700;
+
+}
+
+.fishing-description-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  color: #545454;
+  line-height: 1.5em;
+}
+
+
+.icon-box {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.icon-box img {
+  width: 60px;
+}
+
+.readmore-container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito";
+  letter-spacing: 4px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  color: #4A372A;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.readmore-container a {
+  color:#4A372A;
+}
+
+.readmore-container p:hover {
+  cursor: pointer;
+  color: black;
+}
+
+
+
+/*  timber section  */
+
+.timber-whole-container {
+  width: 100%;
+  overflow: auto;
+}
+
+.timber-green-layover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(74, 55, 42, 0.65);
+}
+
+
+.timber-title-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "Nunito";
+  padding-top: 20px;
+  font-size: 35px;
+  font-weight: 700;
+
+}
+
+.timber-description-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  color: white;
+  line-height: 1.5em;
+}
+
+
+.timber-readmore-container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito";
+  letter-spacing: 4px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  color: #C6C6C6;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.timber-readmore-container a {
+  color: #C6C6C6;
+}
+
+.timber-readmore-container p:hover {
+  cursor: pointer;
+  color: white;
+}
+
+
+
+
+/* footer */
+
+.footer-whole-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #191919;
+}
+
+.socialmedia-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 20px;
+  color: white;
+}
+
+.socialmedia-container a {
+  color: white;
+}
+
+.socialmedia-container i:hover {
+  color: #C6C6C6;
+  cursor: pointer;
+}
+
+.copyright-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito";
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.green {
+  color: #C6C6C6;
+
+}
+
+.green:hover {
+  color: white;
+}
+
+
+
+/*  page   */
+
+
+.page-whole-container {
+  width: 100%;
+}
+
+
+.page-content-width {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.page-title-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: #4A372A;
+  font-family: "Nunito";
+  padding-top: 20px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.page-content-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-family: nunito;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  font-size: 15px;
+  color: #545454;
+  padding-bottom: 120px;
+}
+
+.page-content-container p {
+  padding-bottom: 2em;
+}
+
+.page-content-container h3 {
+  font-size: 24px;
+  color: #4A372A;
+  margin-top: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+.page-content-container h4 {
+  font-size: 20px;
+  color: #4A372A;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+}
+
+
+.page-content-container table {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+
+}
+
+.page-content-container table {
+  border-collapse: collapse;
+}
+
+.page-content-container td {
+  border: solid 1px #4A372A;
+  padding: 10px;
+}
+
+.wp-block-button__link {
+  border-radius: 10px;
+  background-color: #4A372A;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.getintouch-button {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito";
+  letter-spacing: 4px;
+  padding-top: 40px;
+  color: #4A372A;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.getintouch-button a {
+  color:#4A372A;
+}
+
+.getintouch-button a:hover {
+  color: #545454;
+}
+
+.getintouch-button i {
+  padding-left: 10px;
+}
+
+.getintouch-button p:hover {
+  cursor: pointer;
+  color: #545454;
+}
+
+
+
+/*  contact information shortcode */
+
+.oakhamfarm-contactinfo-container p {
+  line-height: 2em;
+}
+
+.oakhamfarm-contactinfo-container i {
+  padding-right: 5px;
+  color: #4A372A;
+}
+
+.oakhamfarm-contactinfo-container a {
+  color: #545454;
+}
+
+.oakhamfarm-contactinfo-container a:hover {
+  color: #4A372A;
+}

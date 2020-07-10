@@ -1,0 +1,23 @@
+/* ==========================================================================
+simple notice
+   ========================================================================== */
+
+
+.simple-notice-custom-control .customize-control-title {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #2E2820;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  margin-top: 10px;
+
+}
+
+.simple-notice-custom-control .customize-control-description {
+	text-align: center;
+}
