@@ -59,16 +59,5 @@ $rightImage = get_theme_mod('header_right_image', get_template_directory_uri() .
       </div>
 
     </div>
-    <div class="header-three-images-container">
-      <div class="header-image-container" style="background: url(<?php echo $leftImage; ?>); background-size: cover; background-position: center center;">
-
-      </div>
-      <div class="header-image-container" style="background: url(<?php echo $middleImage; ?>); background-size: cover; background-position: center center;">
-
-      </div>
-      <div class="header-image-container" style="background: url(<?php echo $rightImage; ?>); background-size: cover; background-position: center center;">
-
-      </div>
-    </div>
-
-</header>
+  </header>
+    

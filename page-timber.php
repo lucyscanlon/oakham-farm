@@ -1,25 +1,26 @@
+<?php /*  template name: Timber Page */?>
+
 <?php
 
-$leftImage = get_theme_mod('header_left_image', get_template_directory_uri() . '/img/pond.jpg' );
-$middleImage = get_theme_mod('header_middle_image', get_template_directory_uri() . '/img/welcomesign.jpg' );
-$rightImage = get_theme_mod('header_right_image', get_template_directory_uri() . '/img/swan.jpg' );
+$leftImageTimber = get_theme_mod('timber_left_image', get_template_directory_uri() . '/img/timber1.jpg' );
+$middleImageTimber = get_theme_mod('timber_middle_image', get_template_directory_uri() . '/img/timber2.jpg' );
+$rightImageTimber = get_theme_mod('timber_right_image', get_template_directory_uri() . '/img/timber3.jpg' );
 
 
 ?>
 
 <?php get_header(); ?>
 <div class="header-three-images-container">
-  <div class="header-image-container" style="background: url(<?php echo $leftImage; ?>); background-size: cover; background-position: center center;">
+  <div class="header-image-container" style="background: url(<?php echo $leftImageTimber; ?>); background-size: cover; background-position: center center;">
 
   </div>
-  <div class="header-image-container" style="background: url(<?php echo $middleImage; ?>); background-size: cover; background-position: center center;">
+  <div class="header-image-container" style="background: url(<?php echo $middleImageTimber; ?>); background-size: cover; background-position: center center;">
 
   </div>
-  <div class="header-image-container" style="background: url(<?php echo $rightImage; ?>); background-size: cover; background-position: center center;">
+  <div class="header-image-container" style="background: url(<?php echo $rightImageTimber; ?>); background-size: cover; background-position: center center;">
 
   </div>
 </div>
-
 <?php if( have_posts() ):
       while( have_posts() ): the_post(); ?>
       <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>

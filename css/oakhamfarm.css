@@ -479,3 +479,136 @@ z-index: 100;
 .oakhamfarm-contactinfo-container a:hover {
   color: #4A372A;
 }
+
+
+/*  contact form  */
+
+form {
+  width: 85%;
+  margin: 0px auto;
+  padding-top: 100px;
+
+}
+
+form input[type=text],[type=email],[type=submit],[type=tel]  {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: solid 1px #D8D8D8;
+border-radius: 10px;
+
+}
+
+form textarea {
+  width: 100%;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: solid 1px #D8D8D8;
+border-radius: 10px;
+height: 200px;
+padding: 20px;
+
+}
+
+form label {
+  line-height: 2em;
+  font-size: 14px;
+
+}
+
+
+form input[type=text]:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px rgba(74 ,55 ,42, 0.5);
+  border: solid 1px rgba(74 ,55 ,42, 0.5);
+}
+
+form input[type=email]:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px rgba(74 ,55 ,42, 0.5);
+  border: solid 1px rgba(74 ,55 ,42, 0.5);
+}
+
+form input[type=tel]:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px rgba(74 ,55 ,42, 0.5);
+  border: solid 1px rgba(74 ,55 ,42, 0.5);
+}
+
+form input[type=select]:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px rgba(74 ,55 ,42, 0.5);
+  border: solid 1px rgba(74 ,55 ,42, 0.5);
+}
+
+form textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px rgba(74 ,55 ,42, 0.5);
+  border: solid 1px rgba(74 ,55 ,42, 0.5);
+}
+
+
+
+form input[type=submit] {
+  background-color: #4A372A;
+  color: white;
+}
+
+form input[type=submit]:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px white;
+  border: solid 1px white;
+}
+
+.wpcf7-response-output {
+  border: none!important;
+}
+
+form select {
+  width: 100%;
+  height: 60px;
+  font-family: "poppins";
+  font-size: 15px;
+  background-color: white;
+  border: solid 1px #D8D8D8;
+
+}
+
+.wpcf7-form div {
+  margin-bottom: 2em;
+}
+
+
+
+form input[type=checkbox] {
+  padding-top: 200px!important;
+}
+
+form select {
+  padding: 10px;
+  font-family: nunito;
+  border-radius: 10px;
+}
+
+form select:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px rgba(74 ,55 ,42, 0.5);
+  border: solid 1px rgba(74 ,55 ,42, 0.5);
+}
+
+.wpcf7-list-item {
+  padding-top: 20px;
+}
+
+form a {
+  color: #4A372A;
+}
+
+form a:hover {
+  color: black;
+}

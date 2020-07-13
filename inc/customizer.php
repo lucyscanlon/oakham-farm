@@ -290,6 +290,78 @@ function oakhamfarm_custom_settings($wp_customize){
 
 
 
+               /* ==========================================================================
+                 Timber Page Images
+                    ========================================================================== */
+
+                    // Creates the "timber" section
+                      $wp_customize->add_section('timber_image_section', array(
+                        'title' => 'Timber Page Images',
+                        'priority' => 0,
+                        'panel' => 'oakhamfarm_settings',
+
+                      ));
+
+                      // timber  title
+                      $wp_customize->add_setting('timber_images_title', array(
+                        'sanitize_callback' => 'wp_filter_nohtml_kses',
+                      ));
+
+
+                      $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'timber_images_title', array(
+                        'label' => 'Timber Images',
+                        'description' => 'Change the three images that appear at the top of your timber page',
+                        'section' => 'timber_image_section',
+                        'settings' => 'timber_images_title'
+                      )));
+
+
+                      // Left Image Upload
+                      $wp_customize->add_setting('timber_left_image', array(
+                        'default' => get_template_directory_uri() . '/img/timber1.jpg',
+                        'sanitize_callback' => 'theme_slug_sanitize_file'
+                      ));
+
+
+                      $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'timber_left_image', array(
+                        'label' => 'Left Image',
+                        'section' => 'timber_image_section',
+                        'settings' => 'timber_left_image',
+
+                      )));
+
+
+                      // Middle Image Upload
+                      $wp_customize->add_setting('timber_middle_image', array(
+                        'default' => get_template_directory_uri() . '/img/timber2.jpg',
+                        'sanitize_callback' => 'theme_slug_sanitize_file'
+                      ));
+
+
+                      $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'timber_middle_image', array(
+                        'label' => 'Middle Image',
+                        'section' => 'timber_image_section',
+                        'settings' => 'timber_middle_image',
+
+                      )));
+
+
+                      // Middle Image Upload
+                      $wp_customize->add_setting('timber_right_image', array(
+                        'default' => get_template_directory_uri() . '/img/timber3.jpg',
+                        'sanitize_callback' => 'theme_slug_sanitize_file'
+                      ));
+
+
+                      $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'timber_right_image', array(
+                        'label' => 'Right Image',
+                        'section' => 'timber_image_section',
+                        'settings' => 'timber_right_image',
+
+                      )));
+
+
+
 
 
 

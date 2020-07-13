@@ -1,5 +1,9 @@
 <?php
 
+$leftImage = get_theme_mod('header_left_image', get_template_directory_uri() . '/img/pond.jpg' );
+$middleImage = get_theme_mod('header_middle_image', get_template_directory_uri() . '/img/welcomesign.jpg' );
+$rightImage = get_theme_mod('header_right_image', get_template_directory_uri() . '/img/swan.jpg' );
+
 $fishIcon = get_template_directory_uri(). '/img/fishicon.png';
 
 $fishTitle = get_theme_mod('fishing_title', 'Oakham Farm Coarse Fishing');
@@ -14,6 +18,17 @@ $timberLink = get_theme_mod('timber_readmore_link', '');
 ?>
 
 <?php get_header(); ?>
+<div class="header-three-images-container">
+  <div class="header-image-container" style="background: url(<?php echo $leftImage; ?>); background-size: cover; background-position: center center;">
+
+  </div>
+  <div class="header-image-container" style="background: url(<?php echo $middleImage; ?>); background-size: cover; background-position: center center;">
+
+  </div>
+  <div class="header-image-container" style="background: url(<?php echo $rightImage; ?>); background-size: cover; background-position: center center;">
+
+  </div>
+</div>
 <div class="timber-whole-container">
     <div class="timber-fishing-boxes">
       <div class="icon-box">
