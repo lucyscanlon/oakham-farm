@@ -21,7 +21,13 @@ a {
 -moz-box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
 box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
 position: relative;
-z-index: 1000;
+z-index: 998;
+}
+
+header {
+  -webkit-box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
+box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
 }
 
 .title-padding {
@@ -487,6 +493,7 @@ form {
   width: 85%;
   margin: 0px auto;
   padding-top: 100px;
+  padding-bottom: 20px;
 
 }
 
@@ -611,4 +618,382 @@ form a {
 
 form a:hover {
   color: black;
+}
+
+
+/* ipad  */
+
+@media only screen and (max-width: 1100px) and (min-width: 550px) {
+
+.header-menu-float ul {
+  display: none;
+}
+
+.mobile-menu-button-container {
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  font-family: nunito;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+.mobile-menu-button-container p {
+  padding-top: 32px;
+}
+
+.mobile-menu-button-container p:hover {
+  color: #4A372A;
+}
+
+.mobile-menu-container li {
+  text-align: center;
+  font-family: nunito;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  font-size: 19px;
+}
+
+.mobile-menu-container ul {
+  padding-bottom: 30px;
+}
+
+.header-menu-float  i {
+  padding-top: 41px;
+  text-align: right;
+  float: right;
+  padding-right: 20px;
+  font-size: 22px;
+  color: white;
+}
+
+.mobile-menu-whole-container {
+  position: absolute;
+  z-index: 999;
+  width: 0px;
+  height: 100%;
+  background-color: #4A372A;
+  right: 0;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+}
+
+.mobilemenu-open {
+  position: absolute;
+  z-index: 999;
+  width: 350px;
+  height: 100%;
+  background-color: #4A372A;
+  right: 0;
+  transition: all .3s ease-in-out;
+}
+
+/*.mobile-menu-title-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: nunito;
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 20px;
+}*/
+
+.mobile-menu-title-container{
+  width:80%;
+  margin: 0 auto;
+  font-family: nunito;
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1px;
+  padding-top: 35px;
+}
+
+.mobile-menu-title {
+  float: left;
+}
+
+.mobile-menu-close {
+  width: 20%;
+  float: right;
+  text-align: right;
+}
+
+.mobile-menu-title p {
+  padding-left: 20px;
+}
+
+.mobile-menu-close p {
+  padding-right: 20px;
+}
+
+.mobile-menu-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.mobile-menu-container li {
+  color: white;
+  text-align: left;
+  list-style-type: none;
+
+}
+
+.mobile-menu-container a {
+  color: white;
+}
+
+.fixedposition {
+  position: fixed;
+}
+
+.header-menu-float {
+  width: 0%;
+}
+
+.header-facebook-float {
+  width: 100%;
+  text-align: right;
+  padding-right: 30px;
+
+}
+
+
+.header-facebook-float i {
+  padding-right: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.header-menu-container {
+  width: 20%
+}
+
+.fishing-description-container {
+  width: 70%;
+}
+
+.timber-title-container {
+  width: 75%;
+}
+
+.fishing-title-container {
+  width: 75%;
+}
+
+.timber-description-container {
+  width: 70%;
+}
+
+.page-content-container {
+  width: 100%;
+}
+
+.getintouch-button {
+  width: 90%;
+}
+
+.smallermenu-button-container {
+  display: none;
+}
+
+.smallermenu-menu-container {
+  display: none;
+}
+
+.header-facebook-float {
+  cursor: pointer;
+}
+
+.header-facebook-float i:hover {
+  color: #C6C6C6;
+}
+
+.mobile-menu-close:hover {
+  cursor: pointer;
+  color: #C6C6C6;
+}
+
+.mobile-menu-container a:hover {
+  cursor: pointer;
+  color: #C6C6C6;
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 550px) {
+
+  .header-title-container h4 {
+
+  }
+
+  .mobile-menu-whole-container {
+    display: none;
+  }
+
+  .header-facebook-float {
+    display: none;
+  }
+
+  .header-menu-container {
+    display: none;
+  }
+
+  .header-whole-container {
+    height: 130px;
+  }
+
+  .header-logo img {
+    padding-top: 25px;
+  }
+
+  .smallermenu-button-container {
+    width: 100%;
+    height: 80px;
+  }
+
+  .smallmenu-button {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: nunito;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .smallmenu-button:hover {
+    cursor: pointer;
+    color: #4A372A;
+  }
+
+  .smallermenu-menu-container {
+    width: 100%;
+    text-align: center;
+    font-family: nunito;
+    letter-spacing: 1px;
+    font-size: 18px;
+    height: 0px;
+    transition: all .3s ease-in-out;
+    background-color: #4A372A;
+    -webkit-box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
+  box-shadow: 2px 9px 24px -21px rgba(0,0,0,0.75);
+
+  }
+
+  .smallermenu-menu-container-open {
+    height: 220px;
+    transition: all .3s ease-in-out;
+  }
+
+  .smallermenu-menu-container li {
+    color: white;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .smallermenu-menu-container a:hover {
+    cursor: pointer;
+    color: #4A372A;
+  }
+
+  .smallermenu-menu-container ul {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .smallermenu-menu-container a {
+    color: white;
+  }
+
+  .facebook-icon-mobile i {
+    padding-bottom: 30px;
+  }
+
+  .header-three-images-container {
+    flex-wrap: wrap;
+    overflow: auto;
+    height: auto;
+  }
+
+  .header-image-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .fishing-description-container {
+    width: 80%;
+  }
+
+  .fishing-title-container {
+    width: 75%;
+  }
+
+  .timber-title-container {
+    width: 75%;
+  }
+
+  .timber-description-container {
+    width: 80%;
+  }
+
+  .page-content-container {
+    width: 100%;
+  }
+
+  .getintouch-button {
+    width: 90%;
+  }
+
+  .header-title-container {
+    padding-top: 10px;
+  }
+
+  .header-title-container h4 {
+    width: 90%;
+  }
+
+  .header-mobile-float {
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1101px) {
+
+.smallermenu-button-container {
+  display: none;
+}
+
+.smallermenu-menu-container {
+  display: none;
+}
+
+.mobile-menu-whole-container {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
 }

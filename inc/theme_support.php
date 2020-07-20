@@ -1,11 +1,11 @@
 <?php
 
 /* Registering Menu Locations */
-function ruralworks_register_nav_menu() {
+function oakhamfarm_register_nav_menu() {
   register_nav_menu( 'primary', 'Main Menu');
 }
 
-add_action( 'after_setup_theme', 'ruralworks_register_nav_menu');
+add_action( 'after_setup_theme', 'oakhamfarm_register_nav_menu');
 
 // Add featured image
 add_action( 'after_setup_theme', function(){

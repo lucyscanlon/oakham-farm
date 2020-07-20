@@ -26,9 +26,35 @@ $rightImage = get_theme_mod('header_right_image', get_template_directory_uri() .
   <?php wp_head(); ?>
 
 </head>
-<body>
+<body id="whole-body">
 <header>
+  <div class="mobile-menu-whole-container" id="mobile-menu">
+    <div class="mobile-menu-title-container">
+      <div class="mobile-menu-title">
+        <p>
+          Menu
+        </p>
+      </div>
+      <div class="mobile-menu-close">
+        <p id="mobileMenuCloseButton">
+          X
+        </p>
+      </div>
+    </div>
+    <div class="mobile-menu-container">
+      <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary',
+          'container' => false,
+
+        ));
+        ?>
+    </div>
+  </div>
+
+
   <div class="header-whole-container">
+    <div class="header-mobile-float">
       <div class="header-logo">
         <img src="<?php echo $logo ?>">
       </div>
@@ -41,6 +67,7 @@ $rightImage = get_theme_mod('header_right_image', get_template_directory_uri() .
 
       </div>
       </div>
+    </div>
       <div class="header-menu-container">
         <div class="header-menu-float">
           <?php
@@ -50,8 +77,11 @@ $rightImage = get_theme_mod('header_right_image', get_template_directory_uri() .
 
             ));
             ?>
+
+
         </div>
         <div class="header-facebook-float">
+          <i class="fas fa-bars" id="burger-icon"></i>
           <a href="<?php echo $facebookLink; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
         </div>
 
@@ -59,5 +89,21 @@ $rightImage = get_theme_mod('header_right_image', get_template_directory_uri() .
       </div>
 
     </div>
+    <div class="smallermenu-button-container">
+      <div class="smallmenu-button" id="smallermenu-button">
+        <p>
+          Menu
+        </p>
+      </div>
+    </div>
+    <div class="smallermenu-menu-container" id="smallermenu-menu">
+      <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary',
+          'container' => false,
+
+        ));
+        ?>
+        <span class="facebook-icon-mobile"><a href="<?php echo $facebookLink; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+    </div>
   </header>
-    
